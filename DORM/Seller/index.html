@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post an Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Post an Item for Sale</h1>
+        
+        <!-- Upload Form -->
+        <form id="itemForm" class="upload-form">
+            <label for="itemImage">Item Image:</label>
+            <input type="file" id="itemImage" name="itemImage" required>
+            
+            <label for="itemName">Item Name:</label>
+            <input type="text" id="itemName" name="itemName" placeholder="Enter item name" required>
+            
+            <label for="itemPrice">Price:</label>
+            <input type="number" id="itemPrice" name="itemPrice" placeholder="Enter item price" required>
+            
+            <label for="itemDescription">Description:</label>
+            <textarea id="itemDescription" name="itemDescription" placeholder="Enter item description" required></textarea>
+            
+            <button type="submit">Post Item</button>
+        </form>
+        
+        <!-- Link to view items -->
+        <div class="view-items-link">
+            <a href="items.html">View Listed Items</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
